@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+**React + TypeScript + Vite 🚀**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is developed using **React**, **TypeScript**, and **Vite**.  
+It provides a fast, modern development environment with **Hot Module Replacement (HMR)**, clean project structure, and built-in tooling support.
 
-Currently, two official plugins are available:
+This documentation explains:
+- How to set up and run the project
+- Basic understanding of TypeScript for beginners
+- Project structure
+- Common commands
+- Build and deployment basics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**📖 About the Project**
 
-## React Compiler
+This is a **React application written in TypeScript**, bundled using **Vite**.
+The goal of this project is to:
+- Build scalable React applications
+- Improve code safety using TypeScript
+- Provide a fast developer experience using Vite
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+This setup is beginner-friendly and does not require deep TypeScript knowledge to get started.
 
-## Expanding the ESLint configuration
+**Project Setup**
+-Step 1: Create Vite + React + TypeScript App, Use this command npm create vite@latest my-react-ts-app
+- Navigate to Project Folder. cd my-react-ts-app.
+- Install Dependencies npm install.
+- Run the Project (Development Mode) --npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**🛠 Tech Stack**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** – UI library
+- **TypeScript** – Static type checking
+- **Vite** – Build tool & dev server
+- **ESLint** – Code quality and linting
+- **Node.js** – Runtime environment
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**📌 Prerequisites**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Ensure the following are installed on your system:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Node.js** (version 16 or above)
+- **npm** (comes with Node.js)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Check versions:
+```bash
+node -v
+npm -v
