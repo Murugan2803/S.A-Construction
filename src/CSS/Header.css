@@ -1,5 +1,5 @@
 .custom-navbar {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 70px;
   transition: all 0.3s ease;
 }
@@ -9,20 +9,20 @@
 .navbar-brand {
   font-size: 22px;
   font-weight: 700;
-  color: #1f2937 !important;
+  color: #ffffff !important;
 }
 .nav-link {
   font-size: 15px;
   font-weight: 500;
-  color: #374151 !important;
+  color: #ffffff !important;
   position: relative;
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: #2563eb !important;
+  color: #000000 !important;
 }
 .active-link {
-  color: #2563eb !important;
+  color: #000000 !important;
 }
 .active-link::after {
   width: 100%;
@@ -34,7 +34,7 @@
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: #2563eb;
+  background: #ffffff;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {

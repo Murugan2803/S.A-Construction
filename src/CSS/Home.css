@@ -1,9 +1,9 @@
 .hero {
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;  
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e")
+    url("D:\My_Projects\S.A Construction\my-react-app\src\assets\banner_img.jpg")
     center / cover no-repeat;
   padding: 60px 0;
   display: flex;
@@ -36,5 +36,101 @@
   .hero{
     font-size: 12px;
     font-weight: 400;
+  }
+}
+
+
+/* SUCCESS SECTION WRAPPER */
+.success-wrapper {
+  position: relative;
+  margin-top: -120px; /* pulls section over hero */
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* MAIN CARD */
+.success-card {
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* LEFT SIDE */
+.success-left {
+  width: 45%;
+  background: #f9a825;
+  padding: 60px;
+}
+
+.success-left h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #1c2331;
+}
+
+.success-left h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #1c2331;
+}
+
+.success-left p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+.success-left button {
+  background: #1c2331;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.success-right {
+  width: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stat {
+  padding: 50px 40px;
+  border: 1px solid #eee;
+}
+
+.stat h3 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1c2331;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .success-card {
+    flex-direction: column;
+  }
+
+  .success-left,
+  .success-right {
+    width: 100%;
+  }
+
+  .success-left h2 {
+    font-size: 30px;
   }
 }
